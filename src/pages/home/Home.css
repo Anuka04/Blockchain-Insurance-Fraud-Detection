@@ -1,0 +1,106 @@
+.App {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  border: none;
+  background: #eee;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+select {
+  border: none;
+  background: #eee;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+label{
+  color: black;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+form:nth-of-type(2) {
+  animation: slideInRight 0.5s forwards;
+}
+
+form:nth-of-type(3) {
+  animation: slideInLeft 0.5s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
